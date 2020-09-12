@@ -1,6 +1,5 @@
 package com.manycode.app.resources;
 
-import com.manycode.app.controller.SaludoController;
 import com.manycode.app.model.UserRating;
 
 import java.util.Random;
