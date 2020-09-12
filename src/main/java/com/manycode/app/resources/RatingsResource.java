@@ -22,7 +22,7 @@ public class RatingsResource {
     	int iii = 0;      
 		for (int ii = 0; ii < 10; ii++) {
 	        while (true) {
-			    iii =getRandomNumberInRange(1, 20000);
+			    iii =getRandomNumberInRange(1, 2000);
 			    LOG.info("intento:" + iii);
 	            if (iii==1974) { break;}
 	        }
