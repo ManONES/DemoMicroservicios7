@@ -1,9 +1,12 @@
 package com.manycode.app.resources;
 
+import com.manycode.app.controller.SaludoController;
 import com.manycode.app.model.UserRating;
 
 import java.util.Random;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 //@RequestMapping(value = "/ratingsdata")
 public class RatingsResource {
 
-
+	private static Logger LOG = LoggerFactory.getLogger(RatingsResource.class);
 
     @RequestMapping("/user/{userId}")
     public UserRating getUserRatings(@PathVariable("userId") String userId) {
